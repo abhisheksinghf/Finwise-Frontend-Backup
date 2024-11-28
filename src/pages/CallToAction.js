@@ -4,7 +4,7 @@ import REAButton from './REAButton'; // Adjust the path if needed
 
 const FinancialJourney = () => {
   return (
-    <div className="w-full h-[90vh] bg-gradient-to-br from-purple-700  to-purple-900 text-white flex items-center justify-center">
+    <div className="w-full h-[90vh] border-none rounded-xl bg-gradient-to-br from-purple-700  to-purple-900 text-white flex items-center justify-center">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center px-6 md:px-12 lg:px-24 space-y-12 md:space-y-0">
         {/* Left Section: Text and Button */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
