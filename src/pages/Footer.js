@@ -5,14 +5,14 @@ const Footer = () => {
     return (
         <div className="w-full">
             <footer className="bg-black w-full">
-                <div className="max-w-screen-2xl mx-auto px-0 py-16"> {/* Added max-width and more padding */}
+                <div className="max-w-screen-xl mx-auto px-0 py-16"> 
                     <div className="flex flex-col lg:flex-row items-center justify-between lg:items-start">
-                        {/* Left Section */}
+                
                         <div className="text-center lg:text-left mb-8 lg:mb-0">
                             <h1 className="text-4xl font-bold text-white">
-                                <span className="text-green-400">Master</span> <span className="text-purple-500">your Finance</span> with Finwise
+                                <span className="text-green-400">Master your </span> <span className="text-purple-500">Finance with Finwise</span>
                             </h1>
-                            <p className="text-gray-400 mt-4 md:w-1/2">
+                            <p className="text-gray-400 mt-4 w-1/2">
                             Finwise School is a revolutionary platform designed to teach Gen-Z the essentials of personal finance through personalized, gamified experiences.
                             </p>
                             <div className="flex items-center mt-6 space-x-4">

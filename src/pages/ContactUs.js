@@ -152,7 +152,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            {/* <ContactFooter/> */}
+            <ContactFooter/>
             <CallToAction/>
         </div>
     );

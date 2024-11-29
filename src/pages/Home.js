@@ -46,7 +46,7 @@ const LandingPage = () => {
             </div>
 
 
-            <div className="flex justify-center gap-48 px-6 bg-black">
+            <div className="flex flex-row justify-center gap-48 px-6 bg-black">
                 <div className="text-center">
                     <div className="relative w-64 h-32 rounded-[30px] flex flex-col items-center justify-center mx-auto mb-4">
                         {/* Background with radial gradient and transparency */}

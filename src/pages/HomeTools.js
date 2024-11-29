@@ -6,7 +6,7 @@ import toolImage4 from '../assets/images/moretool.svg';
 
 const HomeTools = () => {
     return (
-        <div className="bg-black text-white flex items-center justify-center min-h-screen">
+        <div className="bg-black mt-20 text-white flex items-center justify-center min-h-screen">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 max-w-7xl">
                 {/* F.I.R.E Tool */}
                 <div className="flex flex-col justify-center h-full">
@@ -36,10 +36,11 @@ const HomeTools = () => {
                 <div className="flex items-center relative">
                     <img
                         src={toolImage2}
+                        id="toolimg"
                         alt="Global SIP Tool"
                         className="w-[240px] h-[480px] rounded-md shadow-lg"
                     />
-                    <div className="bg-white/20 backdrop-blur-md p-4 w-auto h-[280px] shadow-lg ml-0 rounded-lg flex items-center justify-start"
+                    <div id="contentbox" className="bg-white/20 backdrop-blur-md p-4 w-auto h-[280px] shadow-lg ml-0 rounded-lg flex items-center justify-start"
                         style={{
                             background: 'rgba(255, 255, 255, 0.09)',
                             borderRadius: '0 10px 10px 0px',
@@ -50,8 +51,8 @@ const HomeTools = () => {
                         }}
                     >
                         <div className="text-left">
-                            <h3 className="text-4xl font-bold text-white mb-2">F.I.R.E Tool</h3>
-                            <p className="text-gray-400 text-sm">
+                            <h3 id="title" className="text-4xl font-bold text-white mb-2">F.I.R.E Tool</h3>
+                            <p id="content" className="text-gray-400 text-sm">
                                 Calculate your Financial Independence Retire Early (F.I.R.E) Number.
                             </p>
                         </div>
@@ -62,12 +63,12 @@ const HomeTools = () => {
 
                 {/* More Financial Tools */}
                 <div className="flex items-center relative">
-                    <img
+                    <img id="toolimg"
                         src={toolImage3}
                         alt="Financial Tool"
                         className="w-[240px] h-[480px] rounded-md shadow-lg"
                     />
-                    <div className="bg-white/20 backdrop-blur-md p-4 w-auto h-[280px] shadow-lg ml-0 rounded-lg flex items-center justify-start"
+                    <div id="contentbox" className="bg-white/20 backdrop-blur-md p-4 w-auto h-[280px] shadow-lg ml-0 rounded-lg flex items-center justify-start"
                         style={{
                             background: 'rgba(255, 255, 255, 0.09)',
                             borderRadius: '0 10px 10px 0px',
@@ -78,42 +79,64 @@ const HomeTools = () => {
                         }}
                     >
                         <div className="text-left">
-                            <h3 className="text-4xl font-bold text-white mb-2">Global SIP tool</h3>
-                            <p className="text-gray-400 text-sm">
+                            <h3 id="title" className="text-4xl font-bold text-white mb-2">Global SIP tool</h3>
+                            <p id="content" className="text-gray-400 text-sm">
                                 Plan and implement your financial goals with our Goal SIP tool
                             </p>
                         </div>
                     </div>
-
-
                 </div>
 
-                {/* Example Tool */}
                 <div className="flex items-center relative">
-                    <img
+                    <img id="toolimg"
                         src={toolImage4}
                         alt="Example Tool"
-                        className="w-[240px] h-[480px] rounded-md shadow-lg"
+                        className="rounded-md shadow-lg"
+                        style={{
+                            width: '240px',
+                            height: '480px',
+                        }}
                     />
-                    <div className="bg-white/20 backdrop-blur-md p-4 w-auto h-[280px] shadow-lg ml-0 rounded-lg flex items-center justify-start"
+                    <div id="contentbox"
+                        className="bg-white/20 backdrop-blur-md p-4 w-auto shadow-lg ml-0 rounded-lg flex items-center justify-start"
                         style={{
                             background: 'rgba(255, 255, 255, 0.09)',
                             borderRadius: '0 10px 10px 0px',
                             boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                             backdropFilter: 'blur(5px)',
                             WebkitBackdropFilter: 'blur(5px)',
-                            border: '1px solid rgba(255, 255, 255, 0.3)'
+                            border: '1px solid rgba(255, 255, 255, 0.3)',
+                            height: '280px',
                         }}
                     >
                         <div className="text-left">
-                            <h3 className="text-4xl font-bold text-white mb-2">More financial tools</h3>
-                            <p className="text-gray-400 text-sm">
+                            <h3 id="title" className="text-4xl font-bold text-white mb-2">More tools</h3>
+                            <p id="content" className="text-gray-400 text-sm">
                                 Use over 10+ calculators and tools that help you with every financial decision.
                             </p>
                         </div>
                     </div>
 
-
+                    {/* Add inline CSS with a media query */}
+                    <style>
+                        {`
+            @media (max-width: 767px) {
+                #toolimg {
+                    width: 140px !important;
+                    height: 280px !important;
+                }
+                #contentbox {
+                    height: 150px !important;
+                }
+                #title{
+                    font-size: 15px;
+                }
+                #content{
+                    font-size: 11px;
+                }
+            }
+        `}
+                    </style>
                 </div>
             </div>
         </div >
