@@ -7,6 +7,8 @@ import PlayLeagues from './pages/PlayLeagues';
 import JoinCommunity from './pages/JoinCommunity';
 import CallToAction from './pages/CallToAction';
 import HomeTools from './pages/HomeTools';
+import Footer from './pages/Footer';
+
 
 function Homepage() {
     return (
@@ -19,6 +21,7 @@ function Homepage() {
             <JoinCommunity />
             <HomeTools />
             <CallToAction />
+            <Footer />
         </div>
     );
 }
