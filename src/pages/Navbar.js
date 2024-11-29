@@ -20,7 +20,7 @@ const Navbar = () => {
     const isActive = (path) => location.pathname === path ? 'text-green-500' : 'text-white'; // Change text color to white
 
     return (
-        <nav className="bg-[#070707] text-white border-gray-200 dark:bg-[#070707]" style={{ marginTop: "-15px" }}>
+        <nav className="bg-[#070707] text-white border-gray-200 dark:bg-[#070707]" style={{ marginTop: "-0px" }}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={Logo} className="h-12" alt="Finwise School Logo" />
