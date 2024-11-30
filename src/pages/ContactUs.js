@@ -7,35 +7,36 @@ const ContactUs = () => {
     return (
         <div className="bg-gradient-to-l from-black via-[rgba(128,0,255,0.2)] to-black font-inter flex flex-col min-h-screen m-0 p-0">
             {/* Top Section */}
-            <div className="w-full flex p-12 bg-[#070707]">
+            <div className="w-full flex flex-col md:flex-row p-6 md:p-12 bg-[#070707] items-center md:items-start">
                 {/* Text Section */}
-                <div className="flex-1 mt-10 text-white">
-                    <h1 className="text-5xl font-semibold leading-tight mb-6">
+                <div className="flex-1 text-white text-center md:text-left mt-6 md:mt-10">
+                    <h1 className="text-3xl text-left md:text-5xl font-semibold leading-tight mb-6">
                         <span className="text-[#9F9F9F]">Get in Touch</span><br />
                         with Finwise School
                     </h1>
-                    <p className="text-lg leading-relaxed text-[#B1B1B1] mb-6">
+                    <p className="text-base text-left md:text-lg leading-relaxed text-[#B1B1B1] mb-4">
                         Welcome to Finwise School Contact Us page. We're here to help you with any questions, feedback, or support you may need.
                     </p>
-                    <p className="text-lg leading-relaxed text-[#B1B1B1] mb-6">
+                    <p className="text-base text-left md:text-lg leading-relaxed text-[#B1B1B1] mb-4">
                         Whether you're looking to improve your financial literacy, need guidance on using our tools, or want to learn more about our rewards program.
                     </p>
-                    <p className="text-lg italic text-white">
+                    <p className="text-base text-left md:text-lg italic text-white">
                         We're just a message away. Reach out to us, and let's start building your financial future together.
                     </p>
                 </div>
 
                 {/* Image Section */}
-                <div className="flex-1 flex justify-end items-start">
-                    <div className="w-[600px] h-[600px]">
+                <div className="flex-1 flex justify-center items-center mt-6 md:mt-0">
+                    <div className="w-[300px] h-[300px] md:w-[443px] md:h-auto">
                         <img
                             src={contactImage}
                             alt="Person holding a phone"
-                            className="rounded-2xl object-cover"
+                            className="rounded-2xl object-cover w-full h-full"
                         />
                     </div>
                 </div>
             </div>
+
 
             {/* Form Section */}
             <div className="w-full flex justify-center items-center bg-[#070707] py-12">
@@ -57,7 +58,6 @@ const ContactUs = () => {
                                         className="mt-1 block w-full px-4 py-2 bg-transparent border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white placeholder-gray-500"
                                     />
                                 </div>
-                                {/* Last Name */}
                                 <div>
                                     <label className="block text-sm font-medium text-gray-300">Last Name</label>
                                     <input
@@ -67,7 +67,7 @@ const ContactUs = () => {
                                         className="mt-1 block w-full px-4 py-2 bg-transparent border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white placeholder-gray-500"
                                     />
                                 </div>
-                                {/* Email */}
+
                                 <div>
                                     <label className="block text-sm font-medium text-gray-300">Email</label>
                                     <input
@@ -77,7 +77,6 @@ const ContactUs = () => {
                                         className="mt-1 block w-full px-4 py-2 bg-transparent border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white placeholder-gray-500"
                                     />
                                 </div>
-                                {/* Phone */}
                                 <div>
                                     <label className="block text-sm font-medium text-gray-300">Phone</label>
                                     <input
@@ -152,8 +151,8 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <ContactFooter/>
-            <CallToAction/>
+            <ContactFooter />
+            <CallToAction />
         </div>
     );
 };
