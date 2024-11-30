@@ -27,7 +27,7 @@ const ContactFooter = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white opacity-0 group-hover:opacity-50 transition-all duration-1000"></div>
                     <div className="z-10 text-center">
                         <i className={`${item.icon} text-3xl text-white mb-2`}></i>
-                        <p className="text-white text-sm">{item.text}</p>
+                        <p className="text-white text-xs">{item.text}</p>
                     </div>
                 </div>
             ))}
