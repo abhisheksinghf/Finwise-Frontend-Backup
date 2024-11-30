@@ -4,7 +4,7 @@ import REAButton from './REAButton';
 
 const FinancialJourney = () => {
   return (
-    <div className="w-[99%] h-auto md:h-[90vh] border-none rounded-xl bg-gradient-to-br from-purple-700 to-purple-900 text-white flex items-center justify-center py-12 md:py-0 mx-[10px]">
+    <div className="w-[94%] h-auto md:h-[90vh] md:w-[99%] border-none rounded-xl bg-gradient-to-br from-purple-700 to-purple-900 text-white flex items-center justify-center py-12 md:py-0 mx-[10px]">
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 space-y-12 md:space-y-0">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
