@@ -1,10 +1,10 @@
 import React from 'react';
-import phoneImage from '../assets/images/calltoaction.svg'; 
-import REAButton from './REAButton'; 
+import phoneImage from '../assets/images/calltoaction.svg';
+import REAButton from './REAButton';
 
 const FinancialJourney = () => {
   return (
-    <div className="w-full h-auto md:h-[90vh] border-none rounded-xl bg-gradient-to-br from-purple-700 to-purple-900 text-white flex items-center justify-center py-12 md:py-0">
+    <div className="w-[99%] h-auto md:h-[90vh] border-none rounded-xl bg-gradient-to-br from-purple-700 to-purple-900 text-white flex items-center justify-center py-12 md:py-0 mx-[10px]">
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 space-y-12 md:space-y-0">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -21,10 +21,10 @@ const FinancialJourney = () => {
         </div>
 
         <div className="relative w-full md:w-1/2 flex justify-center">
-          <img 
-            src={phoneImage} 
-            alt="Phone mockup" 
-            className="w-64 md:w-72 lg:w-80 rounded-md shadow-md hidden md:block" 
+          <img
+            src={phoneImage}
+            alt="Phone mockup"
+            className="w-64 md:w-72 lg:w-80 rounded-md shadow-md hidden md:block"
           />
         </div>
       </div>
